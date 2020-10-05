@@ -409,8 +409,13 @@ ul, ol{
     display: block;
 }
 
+.ifHover{
+    display: none;
+}
+
 .thumb1:hover ~.ifHover{
     color: white;
     font-style: italic;
+    display: block;
 }
 
