@@ -99,6 +99,16 @@ ul, ol{
     float: none;
 }
 
+.meImage{
+    border-radius: 50%;
+    height: 70vh !important;
+}
+
+#about .heading {
+    margin: auto;
+
+}
+
 #about .heading h1{
     color: white;
     text-transform: uppercase;
@@ -136,7 +146,7 @@ ul, ol{
 }
 
 #skills .heading h2{
-    color: red;
+    color: black;
 
 }
 
@@ -150,7 +160,7 @@ ul, ol{
 #skills .progress-bar{
     width: 400px;
     height: 3em;
-    background-color: #454343;
+    background-color: #607E24;
     color: white;
 
 }
@@ -168,21 +178,20 @@ ul, ol{
     display: block;
 }
 
-.SQL {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+.progress-bar {
+
 }
 
 /* Tooltip text */
-.SQL .toolTipTextSQL {
+.progress-bar .toolTipText {
     visibility: hidden;
     width: 120px;
     background-color: black;
     color: #fff;
-    text-align: left;
+    text-align: center;
     padding: 5px 0;
     border-radius: 6px;
+    height: auto;
 
     /* Position the tooltip text - see examples below! */
     position: absolute;
@@ -190,7 +199,7 @@ ul, ol{
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.SQL:hover .toolTipTextSQL {
+.progress-bar:hover .toolTipText {
     visibility: visible;
 }
 
@@ -239,7 +248,7 @@ ul, ol{
 }
 
 .timeline li .timeline-badge{
-    color: dimgray;
+    color: #607E24;
     width: 50px;
     line-height: 50px;
     font-size: 20px;
@@ -308,7 +317,7 @@ ul, ol{
 }
 
 .timeline-heading h4{
-    color: red;
+    color: #607E24;
 
 }
 
@@ -319,7 +328,7 @@ ul, ol{
 }
 
 #education .heading h2{
-    color: red;
+    color: #607E24;
 }
 
 .education-block{
@@ -334,7 +343,7 @@ ul, ol{
 }
 
 .education-block h5{
-    color: white;
+    color: black;
     font-size: 15px;
     margin-bottom: 15px;
 }
@@ -391,7 +400,7 @@ ul, ol{
 }
 
 #extractsCode .heading h2{
-    color: red;
+    color: #607E24;
 }
 
 /*.carousel__image{*/
@@ -460,10 +469,40 @@ ul, ol{
 }
 
 
+/*CONTACT*/
+
+#contact{
+    background-color: dimgray;
+    padding: 20px 0 40px;
+}
+
+#contact h2{
+    color: white;
+    text-transform: uppercase;
+
+}
+
+#contact p{
+    color: white;
+    font-size: 20px;
+}
+
+.logoContact{
+    font-size:48px;
+    color:white;
+    cursor: pointer;
+}
+
+.logoContact:hover{
+    font-size: 50px;
+    color: black;
+}
+
+
 /* FOOTER */
 
 footer{
-    background: dimgray;
+    background: white;
     padding: 20px 0 40px;
 
 }
@@ -471,7 +510,7 @@ footer{
 footer .fontStyle{
     font-size: 25px;
     margin: 20px;
-    color: white;
+    color: black;
     height: 30px;
 }
 
@@ -480,7 +519,7 @@ footer .fontStyle:hover{
 }
 
 footer h5{
-    color: white;
+    color: black;
     font-weight: normal;
     text-transform: uppercase;
 }
