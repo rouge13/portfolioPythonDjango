@@ -45,41 +45,40 @@ ul, ol{
 }
 
 /* MENU */
-/*.navbar{*/
-/*    background: white;*/
-/*    font-size: 12px;*/
-/*    letter-spacing: 4px;*/
-/*    font-weight: bold;*/
+.navbar{
+    background: white;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
 
-/*}*/
+}
 
-/*.navbar .navbar-nav{*/
-/*    !*display: inline-block;*!*/
-/*    !*float: none;*!*/
-/*    !*vertical-align: top;*!*/
-/*}*/
+.navbar .navbar-nav{
+    display: flex;
+    justify-content: space-evenly;
+}
 
-/*.navbar .navbar-collapse{*/
-/*    text-align: center;*/
-/*}*/
+.navbar .navbar-collapse{
+    text-align: center;
+}
 
-/*.navbar li a{*/
-/*    color: black !important;*/
-/*}*/
+.navbar li a{
+    color: black !important;
+}
 
-/*.navbar-nav li a:hover, .navbar-nav li.active a{*/
-/*    color: black;*/
-/*    background: white !important;*/
+.navbar-nav li a:hover, .navbar-nav li.active a{
+    color: black;
+    background: white !important;
 
-/*}*/
+}
 
-/*.navbar-default .navbar-toggler{*/
-/*    border-style: none;*/
-/*}*/
+.navbar-default .navbar-toggler{
+    border-style: none;
+}
 
-/*.icon-bar{*/
-/*    background: white !important;=*/
-/*}*/
+.icon-bar{
+    background: white !important;=
+}
 
 /* ABOUT */
 
