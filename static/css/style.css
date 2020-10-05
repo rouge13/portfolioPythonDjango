@@ -53,9 +53,10 @@ ul, ol{
 
 }
 
-.navbar .navbar-nav{
-    display: flex;
-    justify-content: space-evenly;
+.navbar .navbar-nav ul > li{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
 }
 
 .navbar .navbar-collapse{
