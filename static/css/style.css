@@ -49,12 +49,13 @@ ul, ol{
     background: white;
     font-size: 12px;
     letter-spacing: 4px;
+    text-transform: uppercase;
     font-weight: bold;
 
 }
 
-.navbar .navbar-nav ul > li{
-    display: inline-block;
+.navbar .navbar-nav li{
+    display: inline;
     float: none;
     vertical-align: top;
 }
@@ -68,8 +69,8 @@ ul, ol{
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a{
-    color: black;
-    background: white !important;
+    color: white !important;
+    background: dimgray !important;
 
 }
 
