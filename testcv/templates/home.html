@@ -8,9 +8,13 @@
 	<meta name="viewport" content="width=device-width"/>
 	<meta name="description" content="The Curriculum Vitae of Julien HAMMER."/>
 	<meta charset="UTF-8">
-
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
 	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+	<script src="{% static 'js/script.js' %}"></script>
+
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,141 +22,349 @@
 </head>
 <body id="top">
 <div id="cv" class="instaFade">
+
 	<div class="mainDetails">
-		<div id="headshot" class="quickFade">
-			<img src="{% static 'images/JulienHAMMER.jpg' %}" alt="Julien HAMMER" />
-		</div>
 
-		<div id="name">
-			<h1 class="quickFade delayTwo">Julien HAMMER</h1>
-			<h3 class="quickFade delayThree">Developpeur Web et Web Mobile</h3>
-		</div>
+		<section id="about" class="container-fluid">
+			<div class="col-xs-8 col-md-4 profile-picture mb-6">
+				<img src="{% static 'images/me1.jpg' %}" alt="Julien HAMMER" class="rounded-circle">
+			</div>
+			<div class="heading">
 
-		<div id="contactDetails" class="quickFade delayFour">
-			<ul>
-				<li>hammerjulien67@gmail.com</li>
-				<li><a href="http://www.JulienH.com">www.JulienH.com</a></li>
-				<li>N° de téléphone</li>
-				<li><a href="https://www.linkedin.com/in/julien-hammer-7b85b5b4/">LinkedIn</a></li>
-				<li><a href="https://github.com/rouge13/gitRed">GitHub</a></li>
-			</ul>
-		</div>
+				<div id="name">
+					<h1 class="quickFade delayTwo">Julien HAMMER</h1>
+					<h3 class="quickFade delayThree">Developpeur Web Junior</h3>
+				</div>
+
+				<div id="contactDetails" class="quickFade delayFour">
+					<ul>
+						<li>hammerjulien67@gmail.com</li>
+						<li><a href="http://www.JulienH.com">www.JulienH.com</a></li>
+						<li>N° de téléphone</li>
+						<li><a href="https://www.linkedin.com/in/julien-hammer-7b85b5b4/">LinkedIn</a></li>
+						<li><a href="https://github.com/rouge13/gitRed">GitHub</a></li>
+						<li><a href="docs/HAMMER%20Julien%20CV%20Developpeur%20web%20junior.pdf" class="button1">Télécharger CV en PDF</a></li>
+						<li><a href="docs/HAMMER%20Julien%20CV%20Developpeur%20web%20junior.docx" class="button1">Télécharger CV en DOCX</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</section>
+
 		<div class="clear"></div>
 	</div>
 
 	<div id="mainArea" class="quickFade delayFive">
-		<section>
-			<article>
-				<div class="sectionTitle">
-					<h1>PROFIL</h1>
+
+		<section id="skills">
+			<hr>
+			<div class="heading">
+				<h2>Compétences</h2>
+				<div class="container">
+					<div class="progress">
+						<div class="progress-bar SQL" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="toolTipTextSQL">SQL</span></div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">CSS 3</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">BOOTSTRAP</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%" aria-label="HTML 5">HTML 5</div>
+
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">SYMFONY</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">PHP</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">JAVASCRIPT/JQUERY</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">WORDPRESS</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%">PYTHON</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%">DJANGO</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">IDE PHPSTORM</div>
+					</div>
 				</div>
 
-				<div class="sectionContent">
-					<p>Après plusieurs années dans le domaine de la logistique, j’ai pris la décision de me reconvertir professionnellement et de me tourner vers le métier de développeur Web et Web Mobile.
-						J’ai déjà pu me former à différents langages et mettre mes compétences en pratique.
-						Aujourd’hui, je suis prêt à mettre toutes les chances de mon côté pour réussir mon projet et mettre à profit ma jeune expérience.
-					</p>
+
+			</div>
+
+
+		</section>
+
+		<section id="experience">
+			<div class="container">
+				<hr>
+				<div class="heading">
+					<h2>Parcours professionnel</h2>
 				</div>
-			</article>
-			<div class="clear"></div>
-		</section>
+				<ul class="timeline">
+					<li>
+						<div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline-panel-container">
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3>Création d'un portfolio</h3>
+									<h4>Développeur Web Junior</h4>
+									<p class="text-muted"><small class="far fa-clock">Septembre - octobre 2020</small></p>
+								</div>
+								<div class="timeline-body">
+									<p>Création d'un portfolio personnel pour mettre en avant mes divers projets passés et futurs</p>
+								</div>
+							</div>
 
+						</div>
+					</li>
 
-		<section>
-			<div class="sectionTitle">
-				<h1>FORMATION</h1>
-			</div>
+					<li>
+						<div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline-panel-container-inverted">
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3>Soutenance - Obtention</h3>
+									<h4>Titre professionnel (niveau 5 - BTS) Développeur Web et Web Mobile</h4>
+									<p class="text-muted"><small class="far fa-clock">Août 2020</small></p>
+								</div>
+								<div class="timeline-body">
+									<p>Formation professionnelle réalisée avec WebForce3</p>
+								</div>
+							</div>
 
-			<div class="sectionContent">
-				<article>
-					<h2>Développeur Web et Web Mobile - WebForce3</h2>
-					<p class="subDetails">2020</p>
-					<p>
-						-	Intégration web html/CSS
-						-	Conception de pages Web interactives avec JavaScript
-						-	Réalisation d’un site Web à l’aide du CMS WordPress et de PHP
-						-	Exploitation de données MySQL
-						-	Elaboration d’un site Web et exploitation de données Symfony 5
-						Projets en cours de développement
-						-	Projet personnel : création d’un Portfolio
-						-	Création d’un site web sur l’Alsace et son patrimoine
-					</p>
+						</div>
+					</li>
 
-				</article>
+					<li>
+						<div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline-panel-container">
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3>Réalisation du projet "Alsace"</h3>
+									<h4>Projet Personnel réalisé pour le passage en soutenance</h4>
+									<p class="text-muted"><small class="far fa-clock">Juin - Juillet 2020</small></p>
+								</div>
+								<div class="timeline-body">
+									<p>Maquetter une application</p>
+									<p>Réaliser une interface utilisateur web statique et adaptable</p>
+									<p>Développer une interface utilisateur web dynamique</p>
+									<p>Créer une base de données</p>
+									<p>Développer les composants d'accès aux données</p>
+									<p>Développer la partie back-end d’une application web</p>
+								</div>
+							</div>
 
-				<!--				<article>-->
-				<!--					<h2>Job Title at Company</h2>-->
-				<!--					<p class="subDetails">Janruary 2007 - March 2011</p>-->
-				<!--					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>-->
-				<!--				</article>-->
+						</div>
+					</li>
 
-				<!--				<article>-->
-				<!--					<h2>Job Title at Company</h2>-->
-				<!--					<p class="subDetails">October 2004 - December 2006</p>-->
-				<!--					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>-->
-				<!--				</article>-->
-			</div>
-			<div class="clear"></div>
-		</section>
+					<li>
+						<div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline-panel-container-inverted">
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3>Réalisation du projet "Marchés de France"</h3>
+									<h4>Projet de groupe réalisé pour le passage en soutenance</h4>
+									<p class="text-muted"><small class="far fa-clock">Mai 2020</small></p>
+								</div>
+								<div class="timeline-body">
+									<p>Créer d'une base de données</p>
+									<p>Réaliser une page de connexion et de sécurité</p>
+									<p>Gérer la sécurité du site à l'aide de Symfony</p>
+									<p>Créer une page d'ajout de données (marché et hors marché)</p>
+									<p>Réaliser une page pour la mise à jour des données utilisateurs</p>
+								</div>
+							</div>
+						</div>
+					</li>
 
-
-		<section>
-			<div class="sectionTitle">
-				<h1>Compétences</h1>
-			</div>
-
-			<div class="sectionContent">
-				<ul class="keySkills">
-					<li>SQL</li>
-					<li>CSS3</li>
-					<li>Bootstrap</li>
-					<li>HTML5</li>
-					<li>Symfony</li>
-					<li>PHP</li>
-					<li>JavaScript/JQuery</li>
-					<li>WordPress</li>
 				</ul>
 			</div>
-			<div class="clear"></div>
+
 		</section>
 
-		<section>
-			<div class="sectionTitle">
-				<h1>Logiciels</h1>
+		<section id="education">
+			<div class="container">
+				<hr>
+				<div class="heading">
+					<h2>Formations</h2>
+				</div>
+				<div class="row">
+
+					<div class="col-sm-12 col-lg-6">
+						<div class="education-block">
+							<h5>Février - Juin 2020</h5>
+							<span><i class="fas fa-user-graduate"></i></span>
+							<h3><a href="https://www.wf3.fr/">Ecole : Webforce3</a></h3>
+							<h4>TITRE PROFESSIONNEL (RNCP BAC+2) Développeur Web et Web Mobile</h4>
+							<hr>
+							<p>HTML/CSS, JavaScript, JQuery</p>
+							<p>Responsive design, Symfony</p>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-lg-6">
+						<div class="education-block">
+							<h5>Prévu début Décembre 2020</h5>
+							<span><i class="fas fa-user-graduate"></i></span>
+							<h3><a href="https://www.wf3.fr/">Ecole : Webforce3</a></h3>
+							<h4>TITRE PROFESSIONNEL (RNCP BAC+3) Concepteur Développeur d’Applications</h4>
+							<hr>
+						</div>
+					</div>
+
+				</div>
 			</div>
 
-			<div class="sectionContent">
-				<ul class="keySkills">
-					<li>PhpStorm</li>
-
-				</ul>
-			</div>
-			<div class="clear"></div>
 		</section>
 
-		<section>
-			<div class="sectionTitle">
-				<h1>Education</h1>
+		<section id="portfolio">
+			<div class="container">
+				<hr>
+				<div class="heading">
+					<h2>Projets réaliser</h2>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<a href="{% static 'docs/Présentation%20HAMMER%20Julien.pdf' %}" class="presentationAlsace"><img src="{% static 'images/alsaceProject.JPG' %}" alt="alsaceProject"></a>
+
+					</div>
+				</div>
 			</div>
 
-			<div class="sectionContent">
-				<article>
-					<h2>WebForce3</h2>
-					<p class="subDetails">Formation diplômante</p>
-					<p>Développeur Web et Web Mobile - Niveau 5, équivalent bac+2</p>
-				</article>
-
-				<!--				<article>-->
-				<!--					<h2>College/University</h2>-->
-				<!--					<p class="subDetails">Qualification</p>-->
-				<!--					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.</p>-->
-				<!--				</article>-->
-			</div>
-			<div class="clear"></div>
 		</section>
+
+		<section id="extractsCode">
+			<div class="container">
+				<hr>
+				<div class="heading">
+					<h2>Extraits de code du dernier projet</h2>
+				</div>
+				<div id="myCarousel" class="carousel slide txt-center" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+						<li data-target="#myCarousel" data-slide-to="4"></li>
+					</ol>
+					<div class="carousel-inner">
+
+						<div class="carousel-item active">
+							<div class="card text-center">
+								<div class="card-header">
+									<h3>Projet Personnel : Alsace</h3>
+								</div>
+								<div class="card-body">
+									<h5>Insertion dans la base de donnée</h5>
+									<a id="thumb" href="images/insertionBDD.jpg" class="thumb1 insertBDD d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
+									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait du code</p>
+								</div>
+								<div class="card-footer text-muted">
+									Juin - Juillet 2020
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="card text-center">
+								<div class="card-header">
+									<h3>Projet Personnel : Alsace</h3>
+								</div>
+								<div class="card-body">
+									<h5>Le controller de lieu d'intérêt</h5>
+									<a href="images/controllerPOI.jpg" class="controllerPOI d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
+									<p class="card-text">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
+								</div>
+								<div class="card-footer text-muted">
+									Juin - Juillet 2020
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="carousel-item">
+							<div class="card text-center">
+								<div class="card-header">
+									<h3>Projet Personnel : Alsace</h3>
+								</div>
+								<div class="card-body">
+									<h5>Le formulaire d'ajout de lieu d'intérêt</h5>
+									<a href="images/formulairePOI.jpg" class="formPOI d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
+									<p class="card-text">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
+								</div>
+								<div class="card-footer text-muted">
+									Juin - Juillet 2020
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="card text-center">
+								<div class="card-header">
+									<h3>Projet Personnel : Alsace</h3>
+								</div>
+								<div class="card-body">
+									<h5>La page login créer à l'aide de Symfony en HTML</h5>
+									<a href="images/loginHTML.jpg" class="loginHTML d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
+									<p class="card-text">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
+								</div>
+								<div class="card-footer text-muted">
+									Juin - Juillet 2020
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="card text-center">
+								<div class="card-header">
+									<h3>Projet Personnel : Alsace</h3>
+								</div>
+								<div class="card-body">
+									<h5>La possibilité de télécharger plusieurs images JS/AJAX</h5>
+									<a href="images/multiUploadJS.jpg" class="multiUploadJS d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
+									<p class="card-text">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
+
+								</div>
+								<div class="card-footer text-muted">
+									Juin - Juillet 2020
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Précédent</span>
+					</a>
+					<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Suivant</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
 
 	</div>
 </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 <script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -162,5 +374,6 @@
 	pageTracker._initData();
 	pageTracker._trackPageview();
 </script>
+
 </body>
 </html>
