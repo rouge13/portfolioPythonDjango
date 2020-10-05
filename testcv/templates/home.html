@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
 	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
-	<script src="{% static 'js/script.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
 
 
 	<!--[if lt IE 9]>
@@ -24,9 +24,29 @@
 <div id="cv" class="instaFade">
 
 	<div class="mainDetails">
+		<nav class="navbar fixed-top navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="navbar-nav">
+						<li><a class="nav-link active" href="#about">Moi</a></li>
+						<li><a class="nav-link" href="#skills">Compétence</a></li>
+						<li><a class="nav-link" href="#experience">Expérience</a></li>
+						<li><a class="nav-link" href="#education">Formation</a></li>
+						<li><a class="nav-link" href="#project">Projets</a></li>
+						<li><a class="nav-link" href="#extractsCode">Extraits de code</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</nav>
 
 		<section id="about" class="container-fluid">
-			<div class="col-xs-8 col-md-4 profile-picture mb-6">
+			<div class="col-xs-8 col-md-4 profile-picture">
 				<img src="{% static 'images/me1.jpg' %}" alt="Julien HAMMER" class="rounded-circle">
 			</div>
 			<div class="heading">
@@ -226,7 +246,7 @@
 
 		</section>
 
-		<section id="portfolio">
+		<section id="project">
 			<div class="container">
 				<hr>
 				<div class="heading">
@@ -265,7 +285,7 @@
 								</div>
 								<div class="card-body">
 									<h5>Insertion dans la base de donnée</h5>
-									<a id="thumb" href="images/insertionBDD.jpg" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
+									<a id="thumb" href="{% static 'images/insertionBDD.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
 									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait du code</p>
 								</div>
 								<div class="card-footer text-muted">
@@ -281,7 +301,7 @@
 								</div>
 								<div class="card-body">
 									<h5>Le controller de lieu d'intérêt</h5>
-									<a href="images/controllerPOI.jpg" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
+									<a href="{% static 'images/controllerPOI.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
 									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
 								</div>
 								<div class="card-footer text-muted">
@@ -299,7 +319,7 @@
 								</div>
 								<div class="card-body">
 									<h5>Le formulaire d'ajout de lieu d'intérêt</h5>
-									<a href="images/formulairePOI.jpg" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
+									<a href="{% static 'images/formulairePOI.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
 									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
 								</div>
 								<div class="card-footer text-muted">
@@ -315,7 +335,7 @@
 								</div>
 								<div class="card-body">
 									<h5>La page login créer à l'aide de Symfony en HTML</h5>
-									<a href="images/loginHTML.jpg" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
+									<a href="{% static 'images/loginHTML.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
 									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
 								</div>
 								<div class="card-footer text-muted">
@@ -331,7 +351,7 @@
 								</div>
 								<div class="card-body">
 									<h5>La possibilité de télécharger plusieurs images JS/AJAX</h5>
-									<a href="images/multiUploadJS.jpg" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
+									<a href="{% static 'images/multiUploadJS.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
 									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
 
 								</div>
@@ -355,6 +375,14 @@
 		</section>
 
 
+		<footer class="text-center">
+			<a href="#about">
+				<span><i class='fontStyle far fa-arrow-alt-circle-up'></i></span>
+			</a>
+			<h5><i class="fa fa-copyright"></i>2020 Julien HAMMER</h5>
+
+		</footer>
+
 
 
 
@@ -366,8 +394,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
 </script>
 <script type="text/javascript">
 	var pageTracker = _gat._getTracker("UA-3753241-1");
