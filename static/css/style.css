@@ -54,6 +54,10 @@ ul, ol{
 
 }
 
+.me{
+    border-bottom: black solid 1px;
+}
+
 .navbar .navbar-nav li{
     display: inline;
     float: none;
@@ -74,7 +78,7 @@ ul, ol{
 
 }
 
-.navbar-default .navbar-toggler{
+.navbar-expand-lg .navbar-toggler{
     border-style: none;
 }
 
