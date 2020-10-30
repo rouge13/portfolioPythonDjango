@@ -1,0 +1,48 @@
+.card__skills {
+
+  &--list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  &--item {
+    margin: 1rem;
+  }
+
+  &--link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      color: $color-secondary;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-secondary 50%);
+      background-size: 220%;
+      transition: all .4s;
+
+      span {
+        margin-right: 1.5rem;
+        display: inline-block;
+      }
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-quaternary;
+      transform: translateX(1rem);
+    }
+    
+  }
+
+}

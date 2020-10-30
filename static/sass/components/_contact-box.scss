@@ -1,0 +1,31 @@
+.contact-box {
+  height: 15rem;
+  background-color: rgba($color-primary, .8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 1.5rem 4rem rgba($color-primary, .15);
+  border-radius: 5rem;
+  transition: transform .3s;
+
+  &__icon {
+    font-size:5rem;
+    color:$color-secondary;
+    cursor: pointer;
+
+    &:hover {
+      font-size: 6rem;
+      color: $color-tertiary;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  &__content {
+    display: none;
+  }
+
+}

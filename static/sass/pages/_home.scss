@@ -1,0 +1,55 @@
+.section-skills {
+  background-color: $color-secondary;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
+
+}
+
+.section-experience {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-quaternary-light, 0.8),
+                  rgba($color-quaternary-dark, 0.8)),
+  url("/static/images/backgroundCode.jpg");
+
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  & > * { // For selecting all the direct childs
+    transform: skewY(7deg);
+  }
+}
+
+.section-education {
+  background-color: $color-secondary;
+  padding: 20rem 0;
+  margin-top: -10rem;
+}
+
+
+
+.section-project {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-quaternary-light, 0.8),
+                  rgba($color-quaternary-dark, 0.8)),
+  url("/static/images/workspace.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+    & > * { // For selecting all the direct childs
+      transform: skewY(7deg);
+    }
+  }
+
+.section-contact {
+  background-color: $color-secondary;
+  padding: 20rem 0;
+  margin-top: -10rem;
+}
+
+

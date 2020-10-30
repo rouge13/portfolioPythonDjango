@@ -1,0 +1,38 @@
+/* ABOUT */
+
+#about{
+  padding-top: 10rem;
+  background: $color-primary;
+  clip-path: polygon(0 8rem, 100% 8rem, 100% 75%, 0 100%);
+
+  & .profile-picture{
+    text-align: center;
+    margin: 2.5rem auto;
+    float: none;
+
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    /*animation-delay: 2s;*/
+    /*animation-iteration-count: 2;*/
+  }
+
+  & .heading {
+    margin: auto;
+    animation: moveInRight 3s ease-out;
+
+    & h1{
+      font-size: 5rem;
+      color: $color-secondary;
+      text-transform: uppercase;
+    }
+
+    & h3{
+      font-size: 3rem;
+      color: $color-tertiary;
+
+    }
+  }
+
+
+}

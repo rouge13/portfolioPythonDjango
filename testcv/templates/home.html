@@ -8,12 +8,15 @@
 	<meta name="viewport" content="width=device-width"/>
 	<meta name="description" content="The Curriculum Vitae of Julien HAMMER."/>
 	<meta charset="UTF-8">
+	<script src="{% static 'js/main.js' %}"></script>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<!--	<script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+	<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+	<link rel="stylesheet" href="static/css/icon-font.css">
 	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
 	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
-	<script src="{% static 'js/main.js' %}"></script>
+
 
 
 	<!--[if lt IE 9]>
@@ -21,125 +24,164 @@
 	<![endif]-->
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="0" id="top">
-<div id="cv" class="instaFade">
+{% load static %}
+<div id="cv" class="">
 
-	<div class="mainDetails">
+	<div class="">
 
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-			<div class="container">
-				<a class="navbar-brand" href="#"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+		<div class="navigation">
+			<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-				<div class="collapse navbar-collapse d-flex justify-content-around" id="myNavbar">
-					<ul class="navbar-nav">
-						<li class="nav-item me"><a class="nav-link" href="#about">Julien HAMMER</a></li>
-						<li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
-						<li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
-						<li class="nav-item"><a class="nav-link" href="#education">Formation</a></li>
-						<li class="nav-item"><a class="nav-link" href="#project">Projets</a></li>
-						<li class="nav-item"><a class="nav-link" href="#extractsCode">Extraits de code</a></li>
-						<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+			<label for="navi-toggle" class="navigation__button">
+				<span class="navigation__icon">&nbsp;</span>
+			</label>
 
-		<section id="about" class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12 col-md-4 profile-picture">
-					<img src="{% static 'images/me1.jpg' %}" alt="Julien HAMMER" class="meImage">
-				</div>
-				<div class="heading col-xs-12 col-md-4">
+			<div class="navigation__background">&nbsp;</div>
 
-					<div id="name">
-						<h1 class="quickFade delayTwo">Julien HAMMER</h1>
-						<h3 class="quickFade delayThree">Developpeur Web Junior</h3>
-					</div>
+			<nav class="navigation__nav">
+				<ul class="navigation__list">
+					<li class="navigation__item"><a href="#header" class="navigation__link"><span>01</span>Julien HAMMER</a></li>
+					<li class="navigation__item"><a href="#skills" class="navigation__link"><span>02</span>Compétences</a></li>
+					<li class="navigation__item"><a href="#experience" class="navigation__link"><span>03</span>Expérience</a></li>
+					<li class="navigation__item"><a href="#education" class="navigation__link"><span>04</span>Formation</a></li>
+					<li class="navigation__item"><a href="#project" class="navigation__link"><span>05</span>Projets</a></li>
+					<li class="navigation__item"><a href="#extractsCode" class="navigation__link"><span>06</span>Extraits de code</a></li>
+					<li class="navigation__item"><a href="#contact" class="navigation__link"><span>07</span>Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 
-					<div id="contactDetails" class="quickFade delayFour">
-						<ul>
-							<li><a href="https://github.com/rouge13/gitRed" class="button1" target="_blank">GitHub</a></li>
-							<li><a href="{% static 'docs/HAMMER%20Julien%20CV%20Developpeur%20web%20junior.pdf' %}" class="button1" target="_blank">Télécharger CV en PDF</a></li>
-							<li><a href="{% static 'docs/HAMMER%20Julien%20CV%20Developpeur%20web%20junior.docx' %}" class="button1" target="_blank">Télécharger CV en DOCX</a></li>
-						</ul>
-
-					</div>
-				</div>
+		<header class="header" id="header">
+			<div class="header__logo-box">
+				<img src="{% static 'logo/JH.png' %}" alt="Logo" class="header__logo">
 			</div>
 
-		</section>
+			<div class="header__text-box">
+				<h1 class="heading-primary">
+					<span class="heading-primary--main">Julien HAMMER</span>
+					<span class="heading-primary--sub">Developpeur Web Junior</span>
+				</h1>
 
-		<div class="clear"></div>
-	</div>
-
-	<div id="mainArea" class="quickFade delayFive">
-
-		<section id="skills">
-			<hr>
-			<div class="heading">
-				<h2>Compétences</h2>
-				<div class="container col-xs-12 col-md-6">
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">SQL</div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">CSS3 </div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">BOOTSTRAP</div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%" aria-label="HTML 5">HTML 5</div>
-
-					</div>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">SYMFONY</div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">PHP</div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">JAVASCRIPT/JQUERY</div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">WORDPRESS</div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%">PYTHON</div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%">DJANGO</div>
-					</div>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">IDE PHPSTORM</div>
-					</div>
-				</div>
-
-
+				<a href="https://github.com/rouge13/gitRed" class="btn btn--white btn--animated" target="_blank">GitHub</a>
+				<a href="{% static 'docs/HAMMER%20Julien%20CV%20Developpeur%20web%20junior.pdf' %}" class="btn btn--white btn--animated" target="_blank">Télécharger CV en PDF</a>
+				<a href="{% static 'docs/HAMMER%20Julien%20CV%20Developpeur%20web%20junior.docx' %}" class="btn btn--white btn--animated" target="_blank">Télécharger CV en DOCX</a>
 			</div>
+		</header>
 
+		<!--		<section class="gird-test">-->
+		<!--			<div class="row">-->
+		<!--				<div class="col-1-of-2">col 1 of 2</div>-->
+		<!--				<div class="col-1-of-2">col 1 of 2</div>-->
+		<!--			</div>-->
+		<!--			<div class="row">-->
+		<!--				<div class="col-1-of-3">col 1 of 3</div>-->
+		<!--				<div class="col-1-of-3">col 1 of 3</div>-->
+		<!--				<div class="col-1-of-3">col 1 of 3</div>-->
+		<!--			</div>-->
+		<!--			<div class="row">-->
+		<!--				<div class="col-1-of-3">col 1 of 3</div>-->
+		<!--				<div class="col-2-of-3">col 2 of 3</div>-->
+		<!--			</div>-->
+		<!--			<div class="row">-->
+		<!--				<div class="col-1-of-4">col 1 of 4</div>-->
+		<!--				<div class="col-1-of-4">col 1 of 4</div>-->
+		<!--				<div class="col-1-of-4">col 1 of 4</div>-->
+		<!--				<div class="col-1-of-4">col 1 of 4</div>-->
+		<!--			</div>-->
+		<!--			<div class="row">-->
+		<!--				<div class="col-1-of-4">col 1 of 4</div>-->
+		<!--				<div class="col-1-of-4">col 1 of 4</div>-->
+		<!--				<div class="col-2-of-4">col 2 of 4</div>-->
+		<!--			</div>-->
+		<!--			<div class="row">-->
+		<!--				<div class="col-1-of-4">col 1 of 4</div>-->
+		<!--				<div class="col-3-of-4">col 3 of 4</div>-->
+		<!--			</div>-->
+		<!--		</section>-->
 
-		</section>
+		<main>
+			<section class="section-skills" id="skills">
 
-		<section id="experience">
-			<div class="container">
-				<hr>
-				<div class="heading">
-					<h2>Expérience</h2>
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Compétences</h2>
 				</div>
+				<div class="row">
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<h3 class="card__text u-margin-bottom-big">FRONT-END</h3>
+								<img src="static/logo/front.JPG" alt="front" class="card__photo--front">
+							</div>
+							<div class="card__side card__side--back">
+								<div class="card__cta">
+									<h3 class="card__text u-margin-bottom-big">FRONT-END Liens</h3>
+									<ul class="card__skills">
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/HTML5" class="card__skills--link" target="_blank"><span>01</span>HTML 5</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/JavaScript" class="card__skills--link" target="_blank"><span>02</span>JavaScript</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/Bootstrap" class="card__skills--link" target="_blank"><span>03</span>Bootstrap</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/JQuery" class="card__skills--link" target="_blank"><span>04</span>jQuery</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/Ajax_(informatique)" class="card__skills--link" target="_blank"><span>05</span>AJAX</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<h3 class="card__text u-margin-bottom-big">BACK-END</h3>
+								<img src="static/logo/back.JPG" alt="back" class="card__photo--back">
+							</div>
+							<div class="card__side card__side--back">
+								<div class="card__cta">
+									<h3 class="card__text u-margin-bottom-big">BACK-END Liens</h3>
+									<ul class="card__skills">
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/PHP" class="card__skills--link" target="_blank"><span>01</span>PHP</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/Symfony" class="card__skills--link" target="_blank"><span>02</span>Symfony</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" class="card__skills--link" target="_blank"><span>03</span>SQL</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/Python" class="card__skills--link" target="_blank"><span>04</span>Python</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<h3 class="card__text u-margin-bottom-big">AUTRES</h3>
+								<img src="static/logo/autres.JPG" alt="autres" class="card__photo--others">
+							</div>
+							<div class="card__side card__side--back">
+								<div class="card__cta">
+									<h3 class="card__text u-margin-bottom-big">AUTRES Liens</h3>
+									<ul class="card__skills">
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/WampServer" class="card__skills--link" target="_blank"><span>01</span>Wampserver</a></li>
+										<li class="card__skills--item"><a href="https://fr.wikipedia.org/wiki/GitHub" class="card__skills--link" target="_blank"><span>02</span>Github</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-experience" id="experience">
+
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Expérience</h2>
+				</div>
+
 				<ul class="timeline">
 					<li>
-						<div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
-						<div class="timeline-panel-container">
-							<div class="timeline-panel">
-								<div class="timeline-heading">
+						<div class="timeline__badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline__panel--container">
+							<div class="timeline__panel">
+								<div class="timeline__heading">
 									<h3>Création d'un portfolio</h3>
 									<h4>Développeur Web Junior</h4>
 									<p class="text-muted"><small class="far fa-clock">Septembre - octobre 2020</small></p>
 								</div>
-								<div class="timeline-body">
+								<div class="timeline__body">
 									<p>Création d'un portfolio personnel pour mettre en avant mes divers projets passés et futurs</p>
 								</div>
 							</div>
@@ -148,15 +190,15 @@
 					</li>
 
 					<li>
-						<div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
-						<div class="timeline-panel-container-inverted">
-							<div class="timeline-panel">
-								<div class="timeline-heading">
+						<div class="timeline__badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline__panel--container__inverted">
+							<div class="timeline__panel">
+								<div class="timeline__heading">
 									<h3>Soutenance - Obtention</h3>
 									<h4>Titre professionnel (niveau 5 - BTS) Développeur Web et Web Mobile</h4>
 									<p class="text-muted"><small class="far fa-clock">Août 2020</small></p>
 								</div>
-								<div class="timeline-body">
+								<div class="timeline__body">
 									<p>Formation professionnelle réalisée avec WebForce3</p>
 								</div>
 							</div>
@@ -165,15 +207,15 @@
 					</li>
 
 					<li>
-						<div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
-						<div class="timeline-panel-container">
-							<div class="timeline-panel">
-								<div class="timeline-heading">
+						<div class="timeline__badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline__panel--container">
+							<div class="timeline__panel">
+								<div class="timeline__heading">
 									<h3>Réalisation du projet "Alsace"</h3>
 									<h4>Projet Personnel réalisé pour le passage en soutenance</h4>
 									<p class="text-muted"><small class="far fa-clock">Juin - Juillet 2020</small></p>
 								</div>
-								<div class="timeline-body">
+								<div class="timeline__body">
 									<p>Maquetter une application</p>
 									<p>Réaliser une interface utilisateur web statique et adaptable</p>
 									<p>Développer une interface utilisateur web dynamique</p>
@@ -187,15 +229,15 @@
 					</li>
 
 					<li>
-						<div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
-						<div class="timeline-panel-container-inverted">
-							<div class="timeline-panel">
-								<div class="timeline-heading">
+						<div class="timeline__badge"><i class="fa fa-briefcase"></i></div>
+						<div class="timeline__panel--container__inverted">
+							<div class="timeline__panel">
+								<div class="timeline__heading">
 									<h3>Réalisation du projet "Marchés de France"</h3>
 									<h4>Projet de groupe réalisé pour le passage en soutenance</h4>
 									<p class="text-muted"><small class="far fa-clock">Mai 2020</small></p>
 								</div>
-								<div class="timeline-body">
+								<div class="timeline__body">
 									<p>Créer d'une base de données</p>
 									<p>Réaliser une page de connexion et de sécurité</p>
 									<p>Gérer la sécurité du site à l'aide de Symfony</p>
@@ -207,205 +249,259 @@
 					</li>
 
 				</ul>
-			</div>
 
-		</section>
+			</section>
 
-		<section id="education">
-			<div class="container">
-				<hr>
-				<div class="heading">
-					<h2>Formation</h2>
+			<section class="section-education" id="education">
+
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Formation</h2>
 				</div>
+
 				<div class="row">
 
-					<div class="col-sm-12 col-lg-6">
-						<div class="education-block">
-							<h5>Février - Juin 2020</h5>
-							<span><i class="fas fa-user-graduate"></i></span>
-							<h3><a href="https://www.wf3.fr/">Ecole : Webforce3</a></h3>
-							<h5>TITRE PROFESSIONNEL (RNCP BAC+2) Développeur Web et Web Mobile</h5>
-							<hr>
-							<p>HTML/CSS, JavaScript, JQuery</p>
-							<p>Responsive design, Symfony</p>
+					<div class="col-1-of-2">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<h3 class="card__text u-margin-bottom-big">Février - Juin 2020</h3>
+								<span><i class="fas fa-user-graduate u-margin-bottom-small"></i></span>
+								<h5 class=" u-margin-bottom-big">TITRE PROFESSIONNEL (RNCP BAC+2) Développeur Web et Web Mobile</h5>
+
+								<p class=" u-margin-bottom-small">HTML/CSS, JavaScript, JQuery</p>
+								<p>Responsive design, Symfony</p>
+							</div>
+							<div class="card__side card__side--back">
+								<div class="card__cta">
+									<h3 class="card__text u-margin-bottom-big">Ecole Liens</h3>
+									<ul class="card__skills">
+										<li class="card__education--item"><a href="https://www.wf3.fr/" class="card__education--link" target="_blank"><span>01</span>Webforce3</a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 
-					<div class="col-sm-12 col-lg-6">
-						<div class="education-block">
-							<h5>Prévu début Décembre 2020</h5>
-							<span><i class="fas fa-user-graduate"></i></span>
-							<h3><a href="https://www.wf3.fr/">Ecole : Webforce3</a></h3>
-							<h5>TITRE PROFESSIONNEL (RNCP BAC+3) Concepteur Développeur d’Applications</h5>
-							<hr>
+					<div class="col-1-of-2">
+						<div class="card">
+							<div class="card__side card__side--front">
+								<h3 class="card__text u-margin-bottom-big">Prévu début Décembre 2020</h3>
+								<span><i class="fas fa-user-graduate u-margin-bottom-small"></i></span>
+								<h5 class="u-margin-bottom-big">TITRE PROFESSIONNEL (RNCP BAC+3) Concepteur Développeur d’Applications</h5>
+								<p class="">Le concepteur développeur d’applications créé des programmes informatiques : il analyse le projet, définit les grandes lignes, réalise un cahier des charges et propose des solutions.</p>
+							</div>
+							<div class="card__side card__side--back">
+								<div class="card__cta">
+									<h3 class="card__text u-margin-bottom-big">Ecole Liens</h3>
+									<ul class="card__education">
+										<li class="card__education--item u-margin-bottom-big">
+											<a href="https://www.wf3.fr/" class="card__education--link" target="_blank"><span>01</span>Webforce3</a>
+										</li>
+										<li class="card__education--item u-margin-bottom-small">
+											<a href="static/docs/Programme%20détaillé%20-%20CDA%20-%20525h%20Continu.pdf" class="btn btn--white btn--animated" target="_blank">Programme détaillé</a>
+										</li>
+										<li class="card__education--item">
+											<a href="static/docs/WebForce3_fiche_formation_Concepteur.rice%20Dévelppeur.se%20d'Applications.pdf" class="btn btn--white btn--animated" target="_blank">Fiche formation</a>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
-
 				</div>
-			</div>
 
-		</section>
+			</section>
 
-		<section id="project">
-			<div class="container">
-				<hr>
-				<div class="heading">
-					<h2>Projets réalisés</h2>
+			<section class="section-project" id="project">
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Projets réalisés</h2>
 				</div>
 				<div class="row">
-					<div class="col-sm-4">
-						<a href="{% static 'docs/Présentation%20HAMMER%20Julien.pdf' %}" class="presentationAlsace"><img src="{% static 'images/alsaceProject.JPG' %}" alt="alsaceProject"></a>
-
+					<div class="col-1-of-2">
+						<h3 class="heading-tertiary u-margin-bottom-small">Présentation des derniers projets</h3>
+						<p class="paragraph">
+							L’objectif du projet et de créer un répertoire du patrimoine culturel et paysager du département avec un focus particulier sur les biens architecturaux historiques, le but étant de valoriser le pays en facilitant la lecture des ressources patrimoniales du territoire.
+						</p>
+						<p class="paragraph">
+							Les missions étaient de créer un répertoire du patrimoine pour recenser et centraliser les ressources. De mettre en évidence la diversité architecturale du bâti. Et d'apporter de la visibilité au territoire et fournir une vision d’ensemble de l’offre culturelle.
+						</p>
+						<a href="static/docs/Présentation%20HAMMER%20Julien.pdf" class="btn-text">Information supplémentaires &rarr;</a>
+					</div>
+					<div class="col-1-of-2">
+						<div class="composition">
+							<img src="static/images/alsaceProjectPhoto1.JPG" alt="Alsace Project photo 1" class="composition__photo composition__photo--p1">
+							<img src="static/images/alsaceProjectPhoto2.JPG" alt="Alsace Project photo 2" class="composition__photo composition__photo--p2">
+							<img src="static/images/alsaceProjectPhoto3.JPG" alt="Alsace Project photo 3" class="composition__photo composition__photo--p3">
+						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-		</section>
+			<!--		<section id="extractsCode">-->
+			<!--			<div class="container">-->
+			<!--				-->
+			<!--				<div class="heading">-->
+			<!--					<h2>Extraits de code du dernier projet</h2>-->
+			<!--				</div>-->
+			<!--				<div id="myCarousel" class="carousel slide txt-center" data-ride="carousel">-->
+			<!--					<ol class="carousel-indicators">-->
+			<!--						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+			<!--						<li data-target="#myCarousel" data-slide-to="1"></li>-->
+			<!--						<li data-target="#myCarousel" data-slide-to="2"></li>-->
+			<!--						<li data-target="#myCarousel" data-slide-to="3"></li>-->
+			<!--						<li data-target="#myCarousel" data-slide-to="4"></li>-->
+			<!--					</ol>-->
+			<!--					<div class="carousel-inner">-->
 
-		<section id="extractsCode">
-			<div class="container">
-				<hr>
-				<div class="heading">
-					<h2>Extraits de code du dernier projet</h2>
+			<!--						<div class="carousel-item active">-->
+			<!--							<div class="card text-center">-->
+			<!--								<div class="card-header">-->
+			<!--									<h3>Projet Personnel : Alsace</h3>-->
+			<!--								</div>-->
+			<!--								<div class="card-body">-->
+			<!--									<h5>Insertion dans la base de données</h5>-->
+			<!--									<a id="thumb" href="{% static 'images/insertionBDD.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>-->
+			<!--									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait du code</p>-->
+			<!--								</div>-->
+			<!--								<div class="card-footer text-muted">-->
+			<!--									Juin - Juillet 2020-->
+			<!--								</div>-->
+			<!--							</div>-->
+			<!--						</div>-->
+
+			<!--						<div class="carousel-item">-->
+			<!--							<div class="card text-center">-->
+			<!--								<div class="card-header">-->
+			<!--									<h3>Projet Personnel : Alsace</h3>-->
+			<!--								</div>-->
+			<!--								<div class="card-body">-->
+			<!--									<h5>Le controller de lieu d'intérêt</h5>-->
+			<!--									<a href="{% static 'images/controllerPOI.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>-->
+			<!--									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>-->
+			<!--								</div>-->
+			<!--								<div class="card-footer text-muted">-->
+			<!--									Juin - Juillet 2020-->
+			<!--								</div>-->
+			<!--							</div>-->
+			<!--						</div>-->
+
+
+
+			<!--						<div class="carousel-item">-->
+			<!--							<div class="card text-center">-->
+			<!--								<div class="card-header">-->
+			<!--									<h3>Projet Personnel : Alsace</h3>-->
+			<!--								</div>-->
+			<!--								<div class="card-body">-->
+			<!--									<h5>Le formulaire d'ajout de lieu d'intérêt</h5>-->
+			<!--									<a href="{% static 'images/formulairePOI.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>-->
+			<!--									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>-->
+			<!--								</div>-->
+			<!--								<div class="card-footer text-muted">-->
+			<!--									Juin - Juillet 2020-->
+			<!--								</div>-->
+			<!--							</div>-->
+			<!--						</div>-->
+
+			<!--						<div class="carousel-item">-->
+			<!--							<div class="card text-center">-->
+			<!--								<div class="card-header">-->
+			<!--									<h3>Projet Personnel : Alsace</h3>-->
+			<!--								</div>-->
+			<!--								<div class="card-body">-->
+			<!--									<h5>La page login créer à l'aide de Symfony en HTML</h5>-->
+			<!--									<a href="{% static 'images/loginHTML.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>-->
+			<!--									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>-->
+			<!--								</div>-->
+			<!--								<div class="card-footer text-muted">-->
+			<!--									Juin - Juillet 2020-->
+			<!--								</div>-->
+			<!--							</div>-->
+			<!--						</div>-->
+
+			<!--						<div class="carousel-item">-->
+			<!--							<div class="card text-center">-->
+			<!--								<div class="card-header">-->
+			<!--									<h3>Projet Personnel : Alsace</h3>-->
+			<!--								</div>-->
+			<!--								<div class="card-body">-->
+			<!--									<h5>La possibilité de télécharger plusieurs images JS/AJAX</h5>-->
+			<!--									<a href="{% static 'images/multiUploadJS.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>-->
+			<!--									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>-->
+
+			<!--								</div>-->
+			<!--								<div class="card-footer text-muted">-->
+			<!--									Juin - Juillet 2020-->
+			<!--								</div>-->
+			<!--							</div>-->
+			<!--						</div>-->
+
+			<!--					</div>-->
+			<!--					<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">-->
+			<!--						<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+			<!--						<span class="sr-only">Précédent</span>-->
+			<!--					</a>-->
+			<!--					<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">-->
+			<!--						<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+			<!--						<span class="sr-only">Suivant</span>-->
+			<!--					</a>-->
+			<!--				</div>-->
+			<!--			</div>-->
+			<!--		</section>-->
+
+
+			<section class="section-contact" id="contact">
+
+				<div class="u-center-text u-margin-bottom-big">
+					<h2 class="heading-secondary">Me contacter</h2>
 				</div>
-				<div id="myCarousel" class="carousel slide txt-center" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-						<li data-target="#myCarousel" data-slide-to="3"></li>
-						<li data-target="#myCarousel" data-slide-to="4"></li>
-					</ol>
-					<div class="carousel-inner">
-
-						<div class="carousel-item active">
-							<div class="card text-center">
-								<div class="card-header">
-									<h3>Projet Personnel : Alsace</h3>
-								</div>
-								<div class="card-body">
-									<h5>Insertion dans la base de données</h5>
-									<a id="thumb" href="{% static 'images/insertionBDD.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
-									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait du code</p>
-								</div>
-								<div class="card-footer text-muted">
-									Juin - Juillet 2020
-								</div>
-							</div>
+				<div class="row">
+					<div class="col-1-of-4">
+						<div class="contact-box">
+							<a href="https://www.linkedin.com/in/julien-hammer-7b85b5b4/" target="_blank">
+								<i class="contact-box__icon icon-basic-world logoContact"></i>
+							</a>
+							<h3 class="heading-tertiary u-margin-bottom-small">Linkedin</h3>
 						</div>
-
-						<div class="carousel-item">
-							<div class="card text-center">
-								<div class="card-header">
-									<h3>Projet Personnel : Alsace</h3>
-								</div>
-								<div class="card-body">
-									<h5>Le controller de lieu d'intérêt</h5>
-									<a href="{% static 'images/controllerPOI.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
-									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
-								</div>
-								<div class="card-footer text-muted">
-									Juin - Juillet 2020
-								</div>
-							</div>
-						</div>
-
-
-
-						<div class="carousel-item">
-							<div class="card text-center">
-								<div class="card-header">
-									<h3>Projet Personnel : Alsace</h3>
-								</div>
-								<div class="card-body">
-									<h5>Le formulaire d'ajout de lieu d'intérêt</h5>
-									<a href="{% static 'images/formulairePOI.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
-									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
-								</div>
-								<div class="card-footer text-muted">
-									Juin - Juillet 2020
-								</div>
-							</div>
-						</div>
-
-						<div class="carousel-item">
-							<div class="card text-center">
-								<div class="card-header">
-									<h3>Projet Personnel : Alsace</h3>
-								</div>
-								<div class="card-body">
-									<h5>La page login créer à l'aide de Symfony en HTML</h5>
-									<a href="{% static 'images/loginHTML.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
-									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
-								</div>
-								<div class="card-footer text-muted">
-									Juin - Juillet 2020
-								</div>
-							</div>
-						</div>
-
-						<div class="carousel-item">
-							<div class="card text-center">
-								<div class="card-header">
-									<h3>Projet Personnel : Alsace</h3>
-								</div>
-								<div class="card-body">
-									<h5>La possibilité de télécharger plusieurs images JS/AJAX</h5>
-									<a href="{% static 'images/multiUploadJS.jpg' %}" class="thumb1 d-block w-100" target="_blank"><i class='stylePic far fa-images'></i></a>
-									<p class="card-text ifHover">Cliquez sur l'image si vous souhaitez voir l'extrait de code</p>
-
-								</div>
-								<div class="card-footer text-muted">
-									Juin - Juillet 2020
-								</div>
-							</div>
-						</div>
-
 					</div>
-					<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Précédent</span>
-					</a>
-					<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Suivant</span>
-					</a>
-				</div>
-			</div>
-		</section>
-
-
-		<section id="contact">
-			<div class="container">
-				<hr>
-				<div class="heading">
-					<h2>Me contacter</h2>
-				</div>
-				<div class="d-flex justify-content-around">
-					<a href="https://www.linkedin.com/in/julien-hammer-7b85b5b4/" class="logoContact" target="_blank"><i class='fab fa-linkedin'></i></a>
-					<a href="mailto:hammerjulien67@gmail.com"><i class='fas fa-at logoContact'></i></a>
-					<div class="d-flex flex-column text-center">
-						<a onclick="hidePhoneNumber()"><i class="fa fa-mobile-phone logoContact"></i></a>
-						<p id="phoneNumber">06.06.87.10.04</p>
+					<div class="col-1-of-4">
+						<div class="contact-box">
+							<a href="mailto:hammerjulien67@gmail.com">
+								<i class="contact-box__icon icon-basic-mail logoContact"></i>
+							</a>
+							<h3 class="heading-tertiary u-margin-bottom-small">E-mail</h3>
+						</div>
 					</div>
-					<div class="d-flex flex-column text-center">
-						<a onclick="hideLocation()" class="fas fa-map-marker-alt  logoContact"></a>
-						<p id="location">Strasbourg</p>
+					<div class="col-1-of-4">
+						<div class="contact-box">
+							<a onclick="hidePhoneNumber()">
+								<i class="contact-box__icon icon-basic-smartphone logoContact"></i>
+							</a>
+							<h3 class="heading-tertiary u-margin-bottom-small">Mobile</h3>
+							<p class="contact-box__content" id="phoneNumber">06.06.87.10.04</p>
+						</div>
+					</div>
+					<div class="col-1-of-4">
+						<div class="contact-box">
+							<a onclick="hideLocation()">
+								<i class="contact-box__icon icon-basic-geolocalize-01 logoContact"></i>
+							</a>
+							<h3 class="heading-tertiary u-margin-bottom-small">localisation</h3>
+							<p class="contact-box__content" id="location">Strasbourg</p>
+						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+
+		</main>
 
 
+<!--				<footer class="text-center">-->
+<!--					<a href="#header">-->
+<!--						<span><i class='fontStyle far fa-arrow-alt-circle-up'></i></span>-->
+<!--					</a>-->
+<!--					<h5><i class="fa fa-copyright"></i>2020 Julien HAMMER</h5>-->
 
-		</section>
-
-		<footer class="text-center">
-			<a href="#about">
-				<span><i class='fontStyle far fa-arrow-alt-circle-up'></i></span>
-			</a>
-			<h5><i class="fa fa-copyright"></i>2020 Julien HAMMER</h5>
-
-		</footer>
+<!--				</footer>-->
 
 
 
@@ -413,9 +509,6 @@
 
 	</div>
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

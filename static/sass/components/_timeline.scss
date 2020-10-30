@@ -1,0 +1,126 @@
+// EXPERIENCE
+
+.timeline {
+  padding: 3rem 1rem;
+  position: relative;
+  text-align: center;
+
+
+
+  &:after {
+    position: absolute;
+    top: 2.7rem;
+    right: -1.4rem;
+    display: inline-block;
+    border-top: 1.4rem solid transparent;
+    border-left: 1.4rem solid $color-secondary;
+    border-right: 0 solid $color-secondary;
+    border-bottom: 1.4rem solid transparent;
+    content: " ";
+  }
+
+
+
+  &:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: .5rem;
+    background: $color-secondary;
+    left: 50%;
+    margin-left: -.25rem;
+
+
+
+  }
+
+  & > li {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  & > li:after {
+    clear: both;
+  }
+
+  & > li:before, & > li:after {
+    content: " ";
+    display: table;
+  }
+
+  & li &__badge {
+    color: $color-green;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 1.6rem;
+    left: 50%;
+    margin-left: -2.5rem;
+    background-color: $color-secondary;
+    border-radius: 50%;
+  }
+
+  &__heading {
+
+    & h3 {
+      margin-top: .5rem;
+      font-size: 2rem;
+    }
+
+    & h4 {
+      color: $color-green;
+      margin-top: .5rem;
+      font-size: 1.4rem;
+    }
+
+    & p {
+      margin-top: .5rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__panel {
+    width: 90%;
+    float: right;
+    margin-right: 4rem;
+    border: .1rem solid $color-tertiary;
+    border-radius: .7rem;
+    padding: 2rem 2.5rem;
+    position: relative;
+    box-shadow: 0 .1rem .6rem rgba(0,0,0,0.175);
+    background: $color-secondary;
+
+    &--container__inverted & {
+      float: left;
+      margin-left: 4rem;
+
+      & &:after {
+        border-left-width: 0;
+        border-right-width: 1.4rem;
+        left: -1.4rem;
+        right: auto;
+
+      }
+    }
+
+    &--container {
+      width: 50%;
+      float: left;
+
+      &__inverted {
+        width: 50%;
+        float: right;
+
+      }
+    }
+
+
+  }
+
+}
+
+
+

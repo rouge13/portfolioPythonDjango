@@ -15,6 +15,15 @@ import django_heroku
 from decouple import config
 import dj_database_url
 
+def livereload_port():
+    from django.conf import settings
+    return int(getattr(settings, 'LIVERELOAD_PORT', 8000))
+
+
+def livereload_host():
+    from django.conf import settings
+    return getattr(settings, 'LIVERELOAD_HOST', '127.0.0.1')
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -42,7 +51,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'testcv',
+
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -53,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'livereload.middleware.LiveReloadScript',
 ]
 
 ROOT_URLCONF = 'JHCV.urls'
@@ -133,6 +145,4 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
-
-
 
