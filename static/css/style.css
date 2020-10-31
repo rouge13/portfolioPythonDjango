@@ -293,7 +293,7 @@ body {
       background-color: white;
       color: #000000; }
     .card__side--back {
-      background-color: dimgray;
+      background-color: #4a6a0b;
       color: white;
       transform: rotateY(180deg); }
   .card:hover .card__side--front {
@@ -333,7 +333,7 @@ body {
     content: " ";
     display: table; }
   .timeline li .timeline__badge {
-    color: #607e24;
+    color: #4a6a0b;
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
@@ -348,7 +348,7 @@ body {
     margin-top: .5rem;
     font-size: 2rem; }
   .timeline__heading h4 {
-    color: #607e24;
+    color: #4a6a0b;
     margin-top: .5rem;
     font-size: 1.4rem; }
   .timeline__heading p {

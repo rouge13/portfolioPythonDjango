@@ -343,7 +343,7 @@ body {
   color: #000000;
 }
 .card__side--back {
-  background-color: dimgray;
+  background-color: #4a6a0b;
   color: white;
   transform: rotateY(180deg);
 }
@@ -392,7 +392,7 @@ body {
   display: table;
 }
 .timeline li .timeline__badge {
-  color: #607e24;
+  color: #4a6a0b;
   width: 5rem;
   line-height: 5rem;
   font-size: 2rem;
@@ -409,7 +409,7 @@ body {
   font-size: 2rem;
 }
 .timeline__heading h4 {
-  color: #607e24;
+  color: #4a6a0b;
   margin-top: 0.5rem;
   font-size: 1.4rem;
 }

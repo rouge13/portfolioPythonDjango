@@ -6,7 +6,8 @@
     "npm": "6.14.4"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "compile:sass": "node-sass static/sass/main.scss static/css/style.css -w"
   },
   "description": "Julien HAMMER CV",
   "main": "static/js/main.js",
