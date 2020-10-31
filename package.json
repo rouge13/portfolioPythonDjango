@@ -4,7 +4,7 @@
   "description": "Julien HAMMER CV",
   "main": "static/js/main.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
