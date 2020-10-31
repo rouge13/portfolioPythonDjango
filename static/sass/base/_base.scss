@@ -8,26 +8,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: inherit;
-  -ms-overflow-style: none;
-}
-
-
-*::-webkit-scrollbar {
-  width: 0;
-
-  &-track {
-    background: transparent;
-  }
-
-  &-thumb {
-    background: transparent;
-    border: none;
-  }
-
-}
-
-
-
+ }
 
 html{
   //Celà défini ce que vaut 1REM dans ce cas présent 1REM = 10px

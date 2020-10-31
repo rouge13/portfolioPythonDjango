@@ -2,12 +2,10 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 @import "base/animation";
-
 
 @import "components/button";
 @import "components/composition";
@@ -16,26 +14,16 @@
 @import "components/timeline";
 @import "components/skills";
 @import "components/education";
-@import "components/carousel";
-
+@import "components/project";
 
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
 @import "layout/grid";
 
-
 @import "pages/home";
 
 /*!* EXTRAITS DE CODE *!*/
-
-/*#extractsCode{*/
-/*    background-color: $color-secondary;*/
-/*}*/
-
-/*#extractsCode .heading h2{*/
-/*    color: $color-green;*/
-/*}*/
 
 /*!*.carousel__image{*!*/
 /*!*    height: 10rem;*!*/
@@ -80,27 +68,6 @@
 /*}*/
 
 
-/*.stylePic {*/
-/*    font-size: 2.4rem;*/
-/*    color: $color-secondary;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.stylePic:hover{*/
-/*    font-size: 4.8rem;*/
-/*    color: deepskyblue;*/
-/*    display: block;*/
-/*}*/
-
-/*.ifHover{*/
-/*    display: none;*/
-/*}*/
-
-/*.thumb1:hover ~.ifHover{*/
-/*    color: $color-secondary;*/
-/*    font-style: italic;*/
-/*    display: block;*/
-/*}*/
 
 
 
