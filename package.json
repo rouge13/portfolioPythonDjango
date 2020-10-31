@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Julien HAMMER CV",
   "main": "static/js/main.js",
-  "scripts": {
-    "start": "node main.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rouge13/portfolioPythonDjango.git"
