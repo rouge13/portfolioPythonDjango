@@ -1,6 +1,9 @@
 {
   "name": "jhcv",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.16.2"
+  },
   "description": "Julien HAMMER CV",
   "main": "static/js/main.js",
   "repository": {
@@ -14,6 +17,6 @@
   },
   "homepage": "https://github.com/rouge13/portfolioPythonDjango#readme",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+   
   }
 }
