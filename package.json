@@ -1,25 +1,10 @@
 {
-  "name": "jhcv",
-  "version": "1.0.0",
-  "engines": {
-    "node": "12.16.2"
-  },
   "scripts": {
-    "start": "node index.js"
-  },
-  "description": "Julien HAMMER CV",
-  "main": "static/js/main.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rouge13/portfolioPythonDjango.git"
-  },
-  "author": "Julien HAMMER",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rouge13/portfolioPythonDjango/issues"
-  },
-  "homepage": "https://github.com/rouge13/portfolioPythonDjango#readme",
-  "devDependencies": {
-
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   }
 }
