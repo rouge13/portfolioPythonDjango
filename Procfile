@@ -1,2 +1,2 @@
-web: gunicorn JHCV.wsgi
+web:gunicorn JHCV.wsgi
 
