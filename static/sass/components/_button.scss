@@ -99,12 +99,14 @@
   &:link,
   &:visited {
     font-size: $default-font-size;
-    color: $color-secondary;
+    color: $color-green;
     display: inline-block;
     text-decoration: none;
-    border-bottom: .1rem solid $color-tertiary;
     padding: .3rem;
     transition: all .2s;
+    border-radius: 2rem;
+
+
   }
 
   &:hover {
@@ -118,26 +120,4 @@
     box-shadow: 0 .5rem 1rem rgba($color-tertiary, .15);
     transform: translateY(0);
   }
-}
-
-@media (min-width: 0) and (max-width: 48rem) {
-
-  .button1{
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $color-secondary;
-    border: .1rem solid $color-tertiary;
-    display: inline-block;
-    margin-top: 1rem;
-    padding: .8rem 2.5rem;
-    border-radius: .3rem;
-    transition: all 0.3s ease-in;
-
-    &:hover{
-      background: $color-secondary;
-      color: $color-primary;
-
-    }
-  }
-
 }

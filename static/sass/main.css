@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "lato", sans-serif;
 }
 
 .heading-primary {
@@ -31,7 +31,7 @@ body {
   display: block;
   font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 3.5rem;
+  letter-spacing: 3rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -263,12 +263,12 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: white;
+  color: #4a6a0b;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 0.1rem solid #000000;
   padding: 0.3rem;
   transition: all 0.2s;
+  border-radius: 2rem;
 }
 .btn-text:hover {
   background-color: #000000;
@@ -281,23 +281,6 @@ body {
   transform: translateY(0);
 }
 
-@media (min-width: 0) and (max-width: 48rem) {
-  .button1 {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: white;
-    border: 0.1rem solid #000000;
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 2.5rem;
-    border-radius: 0.3rem;
-    transition: all 0.3s ease-in;
-  }
-  .button1:hover {
-    background: white;
-    color: dimgray;
-  }
-}
 .composition {
   position: relative;
 }
@@ -561,6 +544,12 @@ body {
   transform: translateX(1rem);
 }
 
+.project__item {
+  color: #000000;
+  background-color: white;
+  border-radius: 1rem;
+}
+
 .project-box {
   height: 15rem;
   background-color: white;
@@ -571,6 +560,9 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(74, 106, 11, 0.15);
   border-radius: 1rem;
   transition: transform 0.3s;
+}
+.project-box__title {
+  color: #000000;
 }
 .project-box__icon {
   font-size: 3rem;
@@ -588,11 +580,66 @@ body {
   display: none;
 }
 
+.popup {
+  height: 80vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: table;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.25);
+  transition: all 0.5s 0.2s;
+}
+.popup__img {
+  display: block;
+  width: 100%;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup__content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup__close:link, .popup__close:visited {
+  color: #000000;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+  line-height: 1;
+}
+.popup__close:hover {
+  color: dimgray;
+}
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(104, 104, 108, 0.8), rgba(68, 66, 66, 0.8)), url("/static/images/me2.JPG");
+  background-image: linear-gradient(to right bottom, rgba(104, 104, 108, 0.8), rgba(68, 66, 66, 0.8)), url("/static/images/codeCss.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: left;
+  background-repeat: no-repeat;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
@@ -603,6 +650,7 @@ body {
 }
 .header__logo {
   height: 10rem;
+  border-radius: 50%;
 }
 .header__text-box {
   position: absolute;
@@ -616,9 +664,9 @@ body {
   background-color: #4a6a0b;
   padding: 10rem 0;
   font-size: 1.4rem;
+  text-align: center;
 }
 .footer__logo-box {
-  text-align: center;
   margin-bottom: 4rem;
 }
 .footer__logo {
@@ -628,20 +676,19 @@ body {
 .footer__list {
   list-style: none;
 }
-.footer__item {
-  text-align: center;
-}
 .footer__link {
   color: #000000;
   font-size: 4rem;
   margin-bottom: 4rem;
 }
-.footer__link:hover {
+.footer__link:hover, .footer__link:active {
   color: white;
 }
 .footer__copyright {
   font-size: 2.5rem;
-  text-align: center;
+  border-top: 0.1rem solid white;
+  padding-top: 2rem;
+  display: inline-block;
 }
 
 .navigation__checkbox {
@@ -656,7 +703,7 @@ body {
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   text-align: center;
   cursor: pointer;
 }
@@ -669,7 +716,7 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#68686c, #444242);
   z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.8s cubic-bezier(0.8, 0, 0.07, 1);
 }
 .navigation__nav {
   height: 100vh;
@@ -802,12 +849,12 @@ body {
 
 .section-skills {
   background-color: white;
-  padding: 25rem 0 50rem 0;
+  padding: 10rem 0 25rem 0;
   margin-top: -10rem;
 }
 
 .section-experience {
-  padding: 20rem 0;
+  padding: 10rem 0 25rem 0;
   background-image: linear-gradient(to right bottom, rgba(104, 104, 108, 0.8), rgba(68, 66, 66, 0.8)), url("/static/images/backgroundCode.jpg");
   background-size: cover;
   background-position: center;
@@ -820,13 +867,14 @@ body {
 
 .section-education {
   background-color: white;
-  padding: 20rem 0;
+  padding: 20rem 0 25rem 0;
   margin-top: -10rem;
 }
 
 .section-project {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(104, 104, 108, 0.8), rgba(68, 66, 66, 0.8)), url("/static/images/workspace.jpg");
+  color: white;
+  background-image: linear-gradient(to right bottom, rgba(104, 104, 108, 0.8), rgba(68, 66, 66, 0.8)), url("/static/images/keyboard.jpg");
   background-size: cover;
   background-position: center;
   transform: skewY(-7deg);
@@ -846,39 +894,5 @@ body {
   padding: 10rem 0;
   margin-top: -10rem;
 }
-
-/*!* EXTRAITS DE CODE *!*/
-/*!*.carousel__image{*!*/
-/*!*    height: 10rem;*!*/
-/*!*    width: 10rem;*!*/
-/*!*    object-fit: contain;*!*/
-/*!*}*!*/
-/*.carousel-control.left, .carousel-control.right{*/
-/*    background-image: none;*/
-/*    color: $color-primary;*/
-/*}*/
-/*.carousel-indicators{*/
-/*    bottom: 0;*/
-/*}*/
-/*.carousel-indicators li{*/
-/*    border-color: $color-primary;*/
-/*}*/
-/*.carousel-indicators li.active{*/
-/*    border-color: $color-tertiary;*/
-/*}*/
-/*#myCarousel .carousel-item{*/
-/*    padding: 4rem 3rem;*/
-/*}*/
-/*#myCarousel .carousel-item h3 {*/
-/*    color: $color-tertiary;*/
-/*    font-style: italic;*/
-/*}*/
-/*#myCarousel .carousel-item h5 {*/
-/*    color: $color-secondary;*/
-/*    text-transform: uppercase;*/
-/*}*/
-/*.card-body{*/
-/*    background-color: $color-tertiary;*/
-/*}*/
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,13 @@
+.project__item {
+  color: $color-tertiary;
+  background-color: $color-secondary;
+  border-radius: 1rem;
+}
+
 .project-box {
   height: 15rem;
   background-color: $color-secondary;
+
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -8,6 +15,10 @@
   box-shadow: 0 1.5rem 4rem rgba($color-green, .15);
   border-radius: 1rem;
   transition: transform .3s;
+
+  &__title {
+    color: $color-tertiary;
+  }
 
   &__icon {
     font-size:3rem;

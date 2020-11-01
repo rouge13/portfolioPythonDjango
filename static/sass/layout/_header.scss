@@ -4,12 +4,12 @@
                   to right bottom,
                   rgba($color-quaternary-light, 0.8),
                   rgba($color-quaternary-dark, 0.8)),
-  url("/static/images/me2.JPG");
+  url("/static/images/codeCss.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: left;
+  background-repeat: no-repeat;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
 
   &__logo-box {
     position: absolute;
@@ -19,6 +19,7 @@
 
   &__logo {
     height: 10rem;
+    border-radius: 50%;
   }
 
   &__text-box {
