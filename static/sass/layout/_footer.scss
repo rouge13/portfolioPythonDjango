@@ -1,6 +1,5 @@
 .footer {
   background-color: $color-green;
-  padding: 10rem 0;
   font-size: 1.4rem;
   text-align: center;
 
@@ -32,6 +31,7 @@
     color: $color-tertiary;
     font-size: 4rem;
     margin-bottom: 4rem;
+    transition: all .5s;
 
     &:hover,
     &:active {
