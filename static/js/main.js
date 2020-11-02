@@ -48,14 +48,3 @@ function smoothScroll(target, duration) {
 //     smoothScroll();
 // })
 
-// var anchors = document.querySelectorAll("a");
-// for (var i = 0; i < anchors.length; i++) {
-//     anchors[i].addEventListener('click', function(e){
-//         var btn = document.querySelector(".slideToggle");
-//         if (window.getComputedStyle(btn,null).getPropertyValue("display") != 'none') {
-//             btn.click();
-//         }
-//     })
-// }
-
-
