@@ -73,11 +73,11 @@
 }
 
 .footer {
-  padding: 10rem 0;
+  padding: 5rem 0;
   margin-top: -10rem;
 
   @include respond(tab-port) {
-    padding: 8rem 0;
+    padding: 2rem 0;
   }
 }
 

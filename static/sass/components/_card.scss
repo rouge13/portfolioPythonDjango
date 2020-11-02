@@ -2,14 +2,14 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 45rem;
+  height: 50rem;
   border-radius: 3rem;
 
   &__side {
 
     color: $color-secondary;
     font-size: 2rem;
-    height: 45rem;
+    height: 50rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;

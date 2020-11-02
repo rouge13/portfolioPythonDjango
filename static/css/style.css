@@ -40,7 +40,7 @@ html {
       font-size: 30%; } }
   @media (min-width: 112.5em) {
     html {
-      font-size: 75%; } }
+      font-size: 62.5%; } }
 
 body {
   box-sizing: border-box;
@@ -84,21 +84,21 @@ body {
         letter-spacing: .5rem; } }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 5.5rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #68686c, #444242);
+  background-image: linear-gradient(to right, #c1bebe, #929191);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
   @media (max-width: 56.25em) {
     .heading-secondary {
-      font-size: 2.5rem; } }
+      font-size: 4.5rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
-      font-size: 2rem; } }
+      font-size: 4rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -276,7 +276,7 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #768758;
+  color: #79b80c;
   display: inline-block;
   text-decoration: none;
   padding: .3rem;
@@ -366,12 +366,12 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 45rem;
+  height: 50rem;
   border-radius: 3rem; }
   .card__side {
     color: white;
     font-size: 2rem;
-    height: 45rem;
+    height: 50rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -388,7 +388,7 @@ body {
       background-color: white;
       color: #000000; }
     .card__side--back {
-      background-color: #768758;
+      background-color: #79b80c;
       color: white;
       transform: rotateY(180deg); }
   .card:hover .card__side--front {
@@ -445,7 +445,7 @@ body {
     content: " ";
     display: table; }
   .timeline li .timeline__badge {
-    color: #768758;
+    color: #79b80c;
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
@@ -460,7 +460,7 @@ body {
     margin-top: .5rem;
     font-size: 2rem; }
   .timeline__heading h4 {
-    color: #768758;
+    color: #79b80c;
     margin-top: .5rem;
     font-size: 1.4rem; }
   .timeline__heading p {
@@ -589,7 +589,8 @@ body {
 .project__item {
   color: #000000;
   background-color: white;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  padding: 3rem; }
 
 .project-box {
   height: 15rem;
@@ -598,14 +599,14 @@ body {
   padding: 2.5rem;
   text-align: center;
   justify-content: center;
-  box-shadow: 0 1.5rem 4rem rgba(118, 135, 88, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(121, 184, 12, 0.15);
   border-radius: 1rem;
   transition: transform .3s; }
   .project-box__title {
     color: #000000; }
   .project-box__icon {
     font-size: 3rem;
-    color: #768758;
+    color: #79b80c;
     cursor: pointer; }
     .project-box__icon:hover {
       font-size: 4rem;
@@ -693,25 +694,25 @@ body {
     text-align: center; }
 
 .footer {
-  background-color: #768758;
+  background-color: #79b80c;
   font-size: 1.4rem;
   text-align: center; }
   .footer__logo-box {
-    margin-bottom: 4rem; }
+    margin-bottom: .5rem; }
   .footer__logo {
-    width: 15rem;
+    width: 12rem;
     height: auto; }
   .footer__list {
     list-style: none; }
   .footer__link {
     color: #000000;
     font-size: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: .5rem;
     transition: all .5s; }
     .footer__link:hover, .footer__link:active {
       color: white; }
   .footer__copyright {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     border-top: 0.1rem solid white;
     padding-top: 2rem;
     display: inline-block; }
@@ -855,7 +856,7 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem;
+      max-width: 60rem;
       padding: 0 3rem; } }
   .row::after {
     content: "";
@@ -937,8 +938,8 @@ body {
       padding: 15rem 0; } }
 
 .footer {
-  padding: 10rem 0;
+  padding: 5rem 0;
   margin-top: -10rem; }
   @media (max-width: 56.25em) {
     .footer {
-      padding: 8rem 0; } }
+      padding: 2rem 0; } }
