@@ -22,9 +22,8 @@
     list-style: none;
   }
 
-
   &__item {
-
+    cursor: pointer;
   }
 
   &__link {
@@ -32,6 +31,7 @@
     font-size: 4rem;
     margin-bottom: .5rem;
     transition: all .5s;
+
 
     &:hover,
     &:active {

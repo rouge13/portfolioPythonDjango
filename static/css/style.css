@@ -704,6 +704,8 @@ body {
     height: auto; }
   .footer__list {
     list-style: none; }
+  .footer__item {
+    cursor: pointer; }
   .footer__link {
     color: #000000;
     font-size: 4rem;

@@ -4,24 +4,20 @@
 <html lang="en">
 <head>
 	<title>Julien HAMMER - Curriculum Vitae</title>
-
 	<meta name="viewport" content="width=device-width"/>
 	<meta name="description" content="The Curriculum Vitae of Julien HAMMER."/>
 	<meta charset="UTF-8">
-	<script src="{% static 'js/main.js' %}"></script>
+	<script src="static/js/main.js"></script>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="static/css/icon-font.css">
-	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link type="text/css" rel="stylesheet" href="static/css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
-
-
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="0" id="top">
 {% load static %}
 <div id="cv" class="">
 
@@ -248,7 +244,7 @@
 							<div class="card__side card__side--back">
 								<div class="card__cta">
 									<ul class="card__skills">
-										<li class="card__education--item"><a href="https://www.wf3.fr/" class="card__education--link" target="_blank"><span>01</span>Webforce3</a></li>
+										<li class="card__education--item"><a href="https://www.wf3.fr/" class="card__education--link" target="_blank">Webforce3</a></li>
 									</ul>
 								</div>
 							</div>
@@ -267,7 +263,7 @@
 								<div class="card__cta">
 									<ul class="card__education">
 										<li class="card__education--item u-margin-bottom-big">
-											<a href="https://www.wf3.fr/" class="card__education--link" target="_blank"><span>01</span>Webforce3</a>
+											<a href="https://www.wf3.fr/" class="card__education--link" target="_blank">Webforce3</a>
 										</li>
 										<li class="card__education--item u-margin-bottom-small">
 											<a href="static/docs/Programme%20détaillé%20-%20CDA%20-%20525h%20Continu.pdf" class="btn btn--white btn--animated" target="_blank">Programme détaillé</a>
@@ -401,8 +397,8 @@
 			<div class="footer__navigation">
 				<ul class="footer__list">
 					<li class="footer__item">
-						<a href="#header">
-							<i class='footer__link far fa-arrow-alt-circle-up'></i>
+						<a onclick="smoothScroll('#header', 3000)">
+							<i class='sectionFooter footer__link far fa-arrow-alt-circle-up'></i>
 						</a>
 					</li>
 				</ul>
