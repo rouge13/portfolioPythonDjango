@@ -350,6 +350,8 @@ body {
   position: relative;
   height: 50rem;
   border-radius: 3rem; }
+  .card__text {
+    padding-top: 3rem; }
   .card__side {
     color: white;
     font-size: 2rem;
@@ -360,6 +362,10 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border-radius: 3rem;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
