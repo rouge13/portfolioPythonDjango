@@ -16,6 +16,12 @@ function hideLocation() {
     }
 }
 
+function hideNavigation__bar() {
+    document.getElementById("navi-toggle").checked = false;
+
+
+}
+
 function smoothScroll(target, duration) {
     var target = document.querySelector(target);
     var targetPosition = target.getBoundingClientRect().top;
