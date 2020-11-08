@@ -430,6 +430,7 @@ body {
 }
 .contact-box__content {
   display: none;
+  padding-bottom: 2rem;
 }
 
 .card {

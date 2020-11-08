@@ -342,7 +342,8 @@ body {
   .contact-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .contact-box__content {
-    display: none; }
+    display: none;
+    padding-bottom: 2rem; }
 
 .card {
   perspective: 150rem;
