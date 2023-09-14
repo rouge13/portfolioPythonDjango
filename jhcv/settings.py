@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
-import django_heroku
+# import django_heroku
 from decouple import config
 import dj_database_url
 
@@ -67,7 +67,7 @@ MIDDLEWARE = [
 
 ]
 
-ROOT_URLCONF = 'JHCV.urls'
+ROOT_URLCONF = 'jhcv.urls'
 
 TEMPLATES = [
     {
@@ -144,5 +144,5 @@ STATICFILES_DIRS = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
