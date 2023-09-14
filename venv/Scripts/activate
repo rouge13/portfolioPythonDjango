@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\HAMMER\Favorites\Documents\codage\Python\JHCV\venv"
+VIRTUAL_ENV="C:\Users\HAMMER\Favorites\Documents\codage\Python\jhcv\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

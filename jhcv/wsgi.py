@@ -1,5 +1,5 @@
 """
-WSGI config for JHCV project.
+WSGI config for jhcv project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
