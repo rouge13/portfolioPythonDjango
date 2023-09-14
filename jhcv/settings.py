@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 # import django_heroku
 # from decouple import config
-import dj_database_url
+# import dj_database_url
 
 def livereload_port():
     from django.conf import settings
