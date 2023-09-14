@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'JHCV.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'jhcv.settings')
 
 application = get_wsgi_application()
 
